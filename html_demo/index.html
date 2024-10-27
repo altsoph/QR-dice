@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-dice: 6-sided QR-cube</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover the 6-sided QR-cube, where each side generates a unique QR code with a distinct message. Watch the demo.">
+    <meta name="keywords" content="QR-dice, QR cube, QR codes, 6-sided QR, technology, demo, interactive cube, QR project">
+    <meta name="author" content="altsoph">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="QR-dice: 6-sided QR-cube - Unique QR codes with different messages">
+    <meta property="og:description" content="Explore the 6-sided QR-cube, where each side reveals a different QR code message. Check out the interactive demo or watch the video on YouTube!">
+    <meta property="og:image" content="https://altsoph.com/pp/6qrc/qrdice.png"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://altsoph.com/pp/6qrc"> <!-- Replace with actual page URL -->
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QR-dice: 6-sided QR-cube - each projection is a QR code; all with different messages">
+    <meta name="twitter:description" content="Check out the 6-sided QR-cube, where each face reveals a unique QR code. Watch the YouTube demo!">
+    <meta name="twitter:image" content="https://altsoph.com/pp/6qrc/qrdice.png"> <!-- Replace with actual image URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://altsoph.com/pp/6qrc/qrdice.png">
+
+    <!-- Styles and Fonts -->
+    <link rel='stylesheet' href='./style.css' type='text/css' media='all' />
+
+    <!-- Add the glMatrix library for matrix operations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+
+    <script type="module" src="./viewer.js"></script>
+</head>
+
+
+<body>
+    <div class="content">
+        <h1>QR-dice: 6-sided QR-cube</h1>
+    <h2>
+    <label for="data-source">Choose solution:</label>
+    <select id="data-source">
+        <option value="cube.js">First found, 1723</option>
+        <option value="cube2.js">Greedy minimized, 375</option>
+        <option value="cube3.js">Best so far, 294</option>
+    </select>
+    </h2>
+        <canvas id="canvas"></canvas>
+        <p>6 different projections of this cube give 6 different QR codes with 6 different messages. <a href="https://www.youtube.com/watch?v=OXfD0tRtAzo" target=_blank>Demo on youtube</a>.</p>
+        <p>&copy; 2024 altsoph</p>
+    </div>
+</body>
+</html>
