@@ -1,5 +1,8 @@
 # QR-Dice: 6-sided QR-cube
 
+**Update:** It got [Hack of the Month @ Berlin Hack&Tell #100](https://bhnt.c-base.org/2024-10-29-no100-annivercary).
+
+
 Is it possible to arrange a number of cubes in a 3D grid inside a 21x21x21 cube so that projections from each face display six different QR codes, each with its own message?
 
 The answer is **yes**.
